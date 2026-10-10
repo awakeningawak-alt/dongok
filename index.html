@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OneSpxc DartPad</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo">O</div><div><b>OneSpxc</b><small>DARTPAD · LIVE LAB</small></div></div>
+  <div class="top-actions"><span class="status"><i></i> Web Compiler</span><button id="themeBtn" class="ghost">Theme</button></div>
+</header>
+<main>
+  <section class="hero"><div><p class="eyebrow">ONLINE DART PLAYGROUND</p><h1>Build. Run. <em>See it live.</em></h1><p class="sub">Edit Dart code and run supported snippets in the preview. Flutter widgets need a Flutter runtime/build service.</p></div><div class="hero-mark">DART<span>↗</span></div></section>
+  <section class="workspace">
+    <div class="panel editor-panel">
+      <div class="panel-head"><div><span class="dot"></span><b>main.dart</b><small id="editState">Ready</small></div><div class="head-actions"><button id="sampleBtn" class="mini">Sample</button><button id="resetBtn" class="mini">Reset</button></div></div>
+      <textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Dart code editor"></textarea>
+      <div class="editor-foot"><span id="lineCount">1 lines</span><span id="charCount">0 chars</span><span>Dart · editable</span></div>
+    </div>
+    <div class="panel preview-panel">
+      <div class="panel-head"><div><span class="live-dot"></span><b>Preview</b><small id="runState">Waiting to run</small></div><div class="head-actions"><button id="runBtn" class="run">▶ Run</button></div></div>
+      <div class="preview-stage"><div class="device">
+        <div class="device-top"><span>OneSpxc</span><span>● ● ●</span></div>
+        <div id="appPreview" class="app-preview">
+          <div class="preview-badge">LIVE PREVIEW</div><h2 id="pTitle">Hello, OneSpxc</h2><p id="pText">Edit the sample and press Run.</p>
+          <button id="pButton">Get started</button>
+          <div class="preview-card"><span class="card-icon">✦</span><div><b id="pCardTitle">Your first widget</b><small id="pCardText">Rendered from supported Dart values</small></div></div>
+        </div>
+        <div class="device-bottom"></div>
+      </div></div>
+      <div class="console"><div class="console-title"><b>CONSOLE</b><span id="consoleStatus">● READY</span></div><pre id="consoleOutput">Tap Run to evaluate supported Dart snippet patterns.</pre></div>
+    </div>
+  </section>
+  <footer><span>ONES PXC / DARTPAD</span><span>Yellow × Black · Responsive workspace</span></footer>
+</main>
+<script src="script.js"></script>
+</body></html>
